@@ -1,0 +1,21 @@
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: selector-multi-apps-services-all
+spec:
+  selector:
+    matchExpressions:
+      - key: cluster
+        operator: In
+        values:
+          - anz-x-apps-platdev-gke
+          - anz-x-apps-dev-gke
+          - anz-x-apps-np-gke
+          - anz-x-apps-staging-gke
+          - anz-x-apps-prod-gke
+          - anz-x-services-platdev-gke
+          - anz-x-services-np-gke
+          - anz-x-services-staging-gke
+          - anz-x-services-prod-gke
+          - config-sync-mono-cluster
+          - csmr-cluster

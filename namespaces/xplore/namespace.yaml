@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-multi-apps-services-all
+  labels:
+    chart/name: config-management
+    chart/version: 0.26.0
+    generated: "true"
+    istio-injection: enabled
+    namespace: xplore
+  name: xplore

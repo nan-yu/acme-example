@@ -1,0 +1,35 @@
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: anz-x-apps-platdev-gke
+  labels:
+    cluster: anz-x-apps-platdev-gke
+    tier: apps
+    environment: platdev
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: anz-x-apps-prod-gke
+  labels:
+    cluster: anz-x-apps-prod-gke
+    tier: apps
+    environment: prod
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: config-sync-mono-cluster
+  labels:
+    cluster: config-sync-mono-cluster
+    tier: apps
+    environment: prod
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: csmr-cluster
+  labels:
+    cluster: csmr-cluster
+    tier: apps
+    environment: prod
