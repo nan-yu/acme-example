@@ -5,12 +5,4 @@ metadata:
 spec:
    hard:
       configmaps: "2"
----
-kind: ResourceQuota
-apiVersion: v1
-metadata:
-  name: "quota"
-spec:
-   hard:
-      configmaps: "2"
 
